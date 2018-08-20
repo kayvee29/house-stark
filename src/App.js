@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-    state = { loading: false };
+    state = { loading: true };
 
     componentDidMount() {
         // 测试 devServer 的代理功能
@@ -12,12 +12,13 @@ class App extends Component {
         //     .then(res => console.log('here here', res));
     }
 
+
     render() {
         return (
             <div className="App">
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h2>Welcome to React</h2>
+                    <h2>Welcome to KayVee</h2>
                 </div>
                 <p>{ this.state.loading.toString() }</p>
                 <p className="App-intro">
