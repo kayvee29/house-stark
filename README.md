@@ -1,22 +1,11 @@
-# webpack react demo
+## By KayVee
 
-## 安装
-```
-yarn --development 
+# Build a react app on Docker
 
-// or
 
-npm install --development 
-```
 
-## 测试
+Build the docker image using the command: docker build -t <imagename> .
 
-```
-npm start
-```
+Run the container using the command: docker run -it --net=host -d -v <codesourcedir>:/app -p 9000:9000 <DockerImage>:latest
 
-## 构建
-
-```
-npm run build
-```
+Open your browser and go to http://localhost:9000
